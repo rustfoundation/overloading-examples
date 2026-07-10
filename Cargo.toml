@@ -1,10 +1,10 @@
 [workspace]
 resolver = "3"
 members = [
-    "cpp-string-overload",
+    "cpp-pow-overload",
 ]
 default-members = [
-    "cpp-string-overload",
+    "cpp-pow-overload",
 ]
 
 [workspace.package]
@@ -18,7 +18,7 @@ keywords = [
     "overload",
     "C++",
     "interop",
-    "example",
+    "splat",
 ]
 license = "MIT OR APACHE-2.0"
 readme = "README.md"
