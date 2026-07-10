@@ -49,19 +49,6 @@ impl PowArgs for (c_double, c_double) {
     }
 }
 
-impl PowArgs for (c_float, c_int) {
-    type Output = c_float;
-
-    fn call_pow(self) -> c_float {
-        let (base, exponent) = self;
-        unsafe {
-            cpp!([base as "float", exponent as "int"] -> c_float as "float" {
-                return std::pow(base, exponent);
-            })
-        }
-    }
-}
-
 impl PowArgs for (c_int, c_int) {
     type Output = c_double;
 
