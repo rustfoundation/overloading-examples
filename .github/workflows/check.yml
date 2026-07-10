@@ -42,7 +42,7 @@ jobs:
         run: cargo test --workspace --all-targets --all-features
 
   run:
-    name: 3. Run default Rust crate
+    name: 3. Run all Rust binaries
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -50,8 +50,11 @@ jobs:
         with:
           toolchain: nightly
           components: cargo,clippy,rustfmt
-      - name: Run default Rust crate
-        run: # cargo run --all-features --bin-name TODO
+      - name: Run all Rust binaries
+        # If we ever add more than two binaries, detect them all automatically
+        run: |
+          cargo run --bin cpp-string-overload
+          cargo run --bin rust-string-overload
 
   clippy-rust:
     name: 4. Clippy lints on Rust crates
