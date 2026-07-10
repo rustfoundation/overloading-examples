@@ -53,8 +53,8 @@ jobs:
       - name: Run all Rust binaries
         # If we ever add more than two binaries, detect them all automatically
         run: |
-          cargo run --bin cpp-string-overload
-          cargo run --bin rust-string-overload
+          cargo run --bin cpp-pow-overload
+          cargo run --bin rust-pow-overload
 
   clippy-rust:
     name: 4. Clippy lints on Rust crates
