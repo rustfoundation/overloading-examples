@@ -28,3 +28,4 @@ rust-version = "1.99"
 
 [workspace.dependencies]
 cpp = "0.5.11"
+cpp_build = "0.5.11"

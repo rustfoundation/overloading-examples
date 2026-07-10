@@ -1,3 +1,3 @@
 fn main() {
-    println!("This does nothing yet");
+    println!("This does nothing in Rust yet");
 }
