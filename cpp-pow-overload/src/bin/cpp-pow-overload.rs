@@ -30,6 +30,7 @@ impl PowArgs for (c_float, c_float) {
         let (base, exponent) = self;
         unsafe {
             cpp!([base as "float", exponent as "float"] -> c_float as "float" {
+                // This is C++ code!
                 return std::pow(base, exponent);
             })
         }
