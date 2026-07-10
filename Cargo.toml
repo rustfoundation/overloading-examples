@@ -1,0 +1,30 @@
+[workspace]
+resolver = "3"
+members = [
+    "cpp-string-overload",
+]
+default-members = [
+    "cpp-string-overload",
+]
+
+[workspace.package]
+version = "0.0.0"
+authors = [
+    "teor <teor@riseup.net",
+]
+edition = "2024"
+homepage = "https://rust-lang.github.io/rust-project-goals/2026/overloading-for-ffi.html"
+keywords = [
+    "overload",
+    "C++",
+    "interop",
+    "example",
+]
+license = "MIT OR APACHE-2.0"
+readme = "README.md"
+repository = "https://github.com/rustfoundation/overloading-examples"
+# Requires #[splat] which was introduced just before 1.99 branched
+rust-version = "1.99"
+
+[workspace.dependencies]
+cpp = "0.5.11"
