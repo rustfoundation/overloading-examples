@@ -28,6 +28,7 @@ impl HypotArgs for (c_double, c_double) {
         let (x, y) = self;
         unsafe {
             cpp!([x as "double", y as "double"] -> c_double as "double" {
+                // This is C++ code!
                 return std::hypot(x, y);
             })
         }
@@ -69,8 +70,6 @@ impl HypotArgs for (c_int, c_int, c_int) {
         let (x, y, z) = self;
         unsafe {
             cpp!([x as "int", y as "int", z as "int"] -> c_double as "double" {
-                // C++ instantiates the `std::hypot<int, int, int>` template, which casts to
-                // `double` before calling `std::hypot(double, double, double)`.
                 return std::hypot(x, y, z);
             })
         }
