@@ -12,5 +12,5 @@ git clone https://github.com/rustfoundation/overloading-examples
 cd overloading-examples
 rustup override set nightly
 cargo run
-cargo run --bin rust-pow-overload
+cargo run --bin rust-hypot-overload
 ```
