@@ -1,5 +1,4 @@
 //! Example of Rust arithmetic via overloaded functions.
-
 #![feature(splat, tuple_trait)]
 #![expect(incomplete_features)]
 
