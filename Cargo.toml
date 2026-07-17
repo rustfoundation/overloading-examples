@@ -1,10 +1,10 @@
 [workspace]
 resolver = "3"
 members = [
-    "cpp-pow-overload",
+    "cpp-hypot-overload",
 ]
 default-members = [
-    "cpp-pow-overload",
+    "cpp-hypot-overload",
 ]
 
 [workspace.package]
