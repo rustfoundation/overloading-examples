@@ -11,7 +11,7 @@ trait HypotArgs: Tuple {
 }
 
 /// Calls the overloaded Rust `hypot` function with the given arguments.
-fn hypot<Args: HypotArgs>(#[splat] args: Args) -> <Args as HypotArgs>::Output {
+fn hypot<Args: HypotArgs>(#[rustc_splat] args: Args) -> <Args as HypotArgs>::Output {
     args.call_hypot()
 }
 
