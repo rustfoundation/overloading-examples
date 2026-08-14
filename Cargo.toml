@@ -2,9 +2,11 @@
 resolver = "3"
 members = [
     "cpp-hypot-overload",
+    "tuple-reflection",
 ]
 default-members = [
     "cpp-hypot-overload",
+    "tuple-reflection",
 ]
 
 [workspace.package]
