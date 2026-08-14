@@ -13,4 +13,5 @@ cd overloading-examples
 rustup override set nightly
 cargo run
 cargo run --bin rust-hypot-overload
+cargo run --bin tuple-reflection
 ```

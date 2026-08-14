@@ -1,0 +1,15 @@
+[package]
+name = "tuple-reflection"
+version.workspace = true
+authors = [
+    "bushrat011899 <zac@harrold.com.au>",
+]
+edition.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies]
