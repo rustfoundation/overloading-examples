@@ -51,10 +51,11 @@ jobs:
           toolchain: nightly
           components: cargo,clippy,rustfmt
       - name: Run all Rust binaries
-        # If we ever add more than two binaries, detect them all automatically
+        # If we add a lot of binaries, detect them all automatically
         run: |
           cargo run --bin cpp-hypot-overload
           cargo run --bin rust-hypot-overload
+          cargo run --bin tuple-reflection
 
   clippy-rust:
     name: 4. Clippy lints on Rust crates
