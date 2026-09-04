@@ -22,7 +22,7 @@ keywords = [
     "interop",
     "splat",
 ]
-license = "MIT OR APACHE-2.0"
+license = "MIT OR Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/rustfoundation/overloading-examples"
 # Requires #[rustc_splat] which was renamed in nightly-2026-07-31 (rust-lang/rust#159817)
